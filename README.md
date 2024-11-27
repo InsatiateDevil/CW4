@@ -22,14 +22,16 @@ git clone https://github.com/InsatiateDevil/hh-vacancy-search-cli
 ```
 cd hh-vacancy-search-cli
 ```
-3. Установите зависимости через удобный вам образом:
+3. При необходимости создайте виртуальное окружение 
+и установите зависимости через удобный вам образом:
+
 pip:
 ```
 pip install -r requirements.txt
 ```
 poetry:
 ```
-pip install -r requirements.txt
+poetry run python main.py
 ```
 
 
@@ -40,6 +42,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-2. Введите поисковый запрос и нажмите Enter.
-
-3. Приложение выведет список вакансий, соответствующих вашему запросу.
+2. Следуйте инструкциям выводимым в терминале.
