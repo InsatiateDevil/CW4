@@ -29,7 +29,7 @@ def test_add_vacancy(get_jsonworker_object, list_object_vacancies,
 
 
 def test_del_vacancy_one(get_jsonworker_object, list_dict_vacancies_1):
-    get_jsonworker_object.del_vacancies_one(list_dict_vacancies_1[0])
+    get_jsonworker_object.del_vacancy_one(list_dict_vacancies_1[0])
     # строка возвращающая файл в исходное состояние
     assert get_jsonworker_object.load_vacancies() == list_dict_vacancies_1
 

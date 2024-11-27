@@ -784,7 +784,7 @@ def big_list_dict_vacancies():
 @pytest.fixture
 def for_work_with_api(monkeypatch):
     user_input = StringIO("2\n1\nPython\n2\nBackend SQL\n3\n150000\n4\n5\n5\n"
-                          "6\n7\ntest_api_complete.json\nstop")
+                          "6\n7\ntest_api_complete.json\nstop\nназад")
     monkeypatch.setattr('sys.stdin', user_input)
 
 
@@ -792,5 +792,5 @@ def for_work_with_api(monkeypatch):
 def for_work_with_file(monkeypatch):
     user_input = StringIO("2\n1\ntesting\n1\ntesting.json\n2\nBackend SQL\n3\n"
                           "500000\n4\n5\n5\n6\n7\nн\n8\ntest_complete.json\n"
-                          "stop")
+                          "stop\nназад")
     monkeypatch.setattr('sys.stdin', user_input)
